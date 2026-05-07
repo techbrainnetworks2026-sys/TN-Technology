@@ -1,0 +1,137 @@
+.careers-section {
+  padding-top: 100px;
+  padding-bottom: 6rem;
+}
+
+.careers-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.careers-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.careers-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.careers-description {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.careers-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* =========================
+   CAREER CARD
+========================= */
+
+.career-card {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.career-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.career-icon-box {
+  background: rgba(123, 97, 255, 0.1);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.career-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.career-skills {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.career-skill-label {
+  color: var(--color-secondary);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.career-button {
+  background: transparent;
+  border: 1px solid var(--color-glass-border);
+  color: var(--color-text);
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.career-button:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .careers-title {
+    font-size: 2.3rem;
+  }
+
+  .career-card {
+    padding: 1.5rem;
+  }
+
+  .career-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .career-title {
+    font-size: 1.2rem;
+  }
+
+  .careers-description {
+    font-size: 1rem;
+  }
+
+  .career-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

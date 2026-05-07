@@ -1,0 +1,186 @@
+.about-section {
+  padding-top: 100px;
+  padding-bottom: 4rem;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.about-grid {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.about-card {
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-bg-icon {
+  position: absolute;
+  right: -20px;
+  top: -10px;
+  opacity: 0.05;
+}
+
+.about-bg-icon.secondary {
+  color: var(--color-secondary);
+}
+
+.about-bg-icon.accent {
+  color: var(--color-accent);
+}
+
+.about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-icon-box {
+  padding: 0.75rem;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.secondary-bg {
+  background: var(--color-secondary);
+  color: #000;
+}
+
+.accent-bg {
+  background: var(--color-accent);
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg,
+      var(--color-secondary),
+      var(--color-accent));
+}
+
+.about-card-title {
+  font-size: 1.8rem;
+}
+
+.about-card-text {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   IMPACT
+========================= */
+
+.about-impact {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(123, 97, 255, 0.05);
+  border: 1px solid rgba(123, 97, 255, 0.28);
+  border-radius: 16px;
+  margin-bottom: 4rem;
+}
+
+.about-impact-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.about-impact-text {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* =========================
+   FOUNDER
+========================= */
+
+.about-founder {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about-founder-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--color-glass-bg);
+  border: 2px solid var(--color-secondary);
+  margin: 0 auto 1.5rem auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0);
+}
+
+.about-founder-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-founder-role {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2.3rem;
+  }
+
+  .about-card {
+    padding: 2rem;
+  }
+
+  .about-card-title {
+    font-size: 1.5rem;
+  }
+
+  .about-card-text,
+  .about-impact-text,
+  .about-description {
+    font-size: 1rem;
+  }
+}

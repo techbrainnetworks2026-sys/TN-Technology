@@ -1,0 +1,202 @@
+/* Styles specific to Hero component */
+.hero-section {
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 2rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.hero-container {
+  max-width: 1000px;
+  text-align: center;
+
+  position: relative;
+  z-index: 10;
+}
+
+/* =========================
+   ORBS
+========================= */
+
+.hero-orb {
+  position: absolute;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+.hero-orb-one {
+  width: 300px;
+  height: 300px;
+
+  background: radial-gradient(
+    circle,
+    var(--color-secondary) 0%,
+    transparent 70%
+  );
+
+  top: 10%;
+  left: 5%;
+
+  filter: blur(60px);
+}
+
+.hero-orb-two {
+  width: 400px;
+  height: 400px;
+
+  background: radial-gradient(
+    circle,
+    var(--color-accent) 0%,
+    transparent 70%
+  );
+
+  bottom: 10%;
+  right: 5%;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: rgba(123, 97, 255, 0.15);
+  border: 1px solid var(--color-accent-purple);
+
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+
+  margin-bottom: 2rem;
+
+  color: var(--color-accent-blue);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 1.1;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--color-text-heading);
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.hero-description {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+
+  color: var(--color-text-primary);
+
+  margin: 0 auto 3rem auto;
+  max-width: 800px;
+
+  font-family: var(--font-body);
+
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+
+  line-height: 1.8;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.hero-button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-button {
+  background: linear-gradient(
+    90deg,
+    var(--color-secondary),
+    #82d0f7ff
+  );
+
+  color: #0A0F1C;
+  border: none;
+
+  padding: 1.25rem 2.5rem;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  text-transform: uppercase;
+
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.02);
+
+  transition: all 0.3s ease;
+
+  font-family: var(--font-heading);
+}
+
+.hero-button:hover {
+  box-shadow: 0 0 40px rgba(0, 247, 255, 0);
+  transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 0.45rem 1rem;
+  }
+
+  .hero-description {
+    line-height: 1.7;
+  }
+
+  .hero-button {
+    width: 100%;
+    justify-content: center;
+
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .hero-button-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

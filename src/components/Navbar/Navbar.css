@@ -1,0 +1,176 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 1000;
+
+  transition: all 0.3s ease;
+
+  background: transparent;
+  padding: 1.5rem 0;
+}
+
+/* =========================
+   SCROLLED
+========================= */
+
+.navbar-scrolled {
+  background: var(--color-glass-bg);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid
+    var(--color-glass-border);
+
+  padding: 1rem 0;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.navbar-container {
+  margin: 0 auto;
+
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.navbar-logo-text {
+  font-family: var(--font-heading);
+
+  font-size: 1.3rem;
+  font-weight: 650;
+
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin-right: 15px;
+  margin-left: 5px;
+  align-items: flex-start;
+  width: 100%;
+  align-self: flex-start;
+  text-align: center;
+}
+
+/* =========================
+   DESKTOP NAV
+========================= */
+
+.desktop-nav {
+  display: none;
+  gap: 2rem;
+}
+
+.navbar-link {
+  font-size: 0.9rem;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: var(--color-text-muted);
+
+  transition: color 0.3s ease;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: var(--color-accent-blue);
+}
+
+/* =========================
+   MOBILE TOGGLE
+========================= */
+
+.mobile-toggle {
+  background: none;
+  border: none;
+
+  color: var(--color-text);
+
+  cursor: pointer;
+
+  display: block;
+}
+
+/* =========================
+   MOBILE NAV
+========================= */
+
+.mobile-nav {
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  background: var(--color-bg-primary);
+
+  border-bottom: 1px solid
+    var(--color-glass-border);
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.mobile-nav-link {
+  font-size: 1.1rem;
+
+  letter-spacing: 1px;
+
+  color: var(--color-text-primary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (min-width: 992px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1.2rem;
+  }
+
+  .navbar-logo-text {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo-text {
+    display: none;
+  }
+}

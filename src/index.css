@@ -85,7 +85,7 @@ a {
 
 .neon-text-blue {
   color: var(--color-accent-blue);
-  text-shadow: 0 0 10px rgba(0, 245, 255, 0.5);
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0);
 }
 
 .neon-text-purple {

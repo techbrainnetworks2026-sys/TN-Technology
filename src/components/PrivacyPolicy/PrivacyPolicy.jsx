@@ -1,6 +1,7 @@
-import AnimatedSection from '../components/AnimatedSection';
+import AnimatedSection from '../Animation/AnimatedSection';
 import { Shield } from 'lucide-react';
 import { useEffect } from 'react';
+import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -8,7 +9,7 @@ const PrivacyPolicy = () => {
   }, []);
 
   return (
-    <div style={{ paddingTop: '100px', paddingBottom: '6rem' }}>
+    <div className="privacy-policy-section" style={{ paddingTop: '100px', paddingBottom: '6rem' }}>
       <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 2rem' }}>
         
         <AnimatedSection>

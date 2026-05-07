@@ -1,0 +1,156 @@
+.footer-container {
+  border-top: 1px solid var(--color-glass-border);
+  background: rgba(5, 8, 15, 0.95);
+
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: auto;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 3rem;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 650;
+  letter-spacing: 1px;
+}
+
+.footer-description {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+
+  color: var(--color-text);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.75rem;
+}
+
+.footer-link {
+  color: var(--color-text-muted);
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--color-secondary);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.footer-contact-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.footer-contact-item.align-start {
+  align-items: flex-start;
+}
+
+.footer-icon {
+  flex-shrink: 0;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  max-width: 1200px;
+
+  margin: 3rem auto 0 auto;
+  padding-top: 2rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  text-align: center;
+
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 3rem 1.5rem 2rem 1.5rem;
+  }
+
+  .footer-grid {
+    gap: 2.5rem;
+  }
+
+  .footer-logo-text {
+    font-size: 1.3rem;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+}
