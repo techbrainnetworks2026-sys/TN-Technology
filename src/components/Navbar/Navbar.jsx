@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, Cpu } from 'lucide-react';
 
-import './navbar.css';
+import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);

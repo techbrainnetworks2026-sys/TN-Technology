@@ -10,7 +10,7 @@ import {
   Github
 } from 'lucide-react';
 
-import './footer.css';
+import './Footer.css';
 
 const Footer = () => {
   return (
